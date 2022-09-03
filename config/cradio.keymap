@@ -9,6 +9,7 @@
 #define ESC_NAV &lt NAV ESC
 #define S_SYM &lt SYM S
 #define T_NUM &lt NUM T
+#define S_NUM &lt NUM Y
 
 // Layer definitions
 #define COLMAK 0
