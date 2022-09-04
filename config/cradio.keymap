@@ -61,6 +61,33 @@
                 , <&macro_tap &kp RET>
                 ;
         };
+
+        parPair: parPair{
+            label = "winver";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                , <&macro_tap &kp LPAR &kp RPAR>
+                ;
+        };
+
+        sqrBracketPair: parPair{
+            label = "winver";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                , <&macro_tap &kp LBKT &kp RBKT>
+                ;
+        };
+
+        curlyBracePair: parPair{
+            label = "winver";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                , <&macro_tap &kp LBRC &kp RBRC>
+                ;
+        };
     };
 
     combos {
@@ -225,10 +252,10 @@
         //                   +-----+-----+  +-----+-----+
         sym_layer{
             bindings = <
-                &kp GRAVE &trans &trans    &trans   &trans       &trans     &kp UNDER   &trans  &trans &tdPRCNT 
-                &tdAT     &trans &trans    &trans   &trans       &trans     &trans      &tdEXCL &trans &trans   
-                &trans    &trans &kp CARET &kp DLLR &trans       &trans     &kp HASH    &trans  &trans &trans   
-                                           &trans   &trans       &tdOpenPar &tdClosePar
+                &kp GRAVE &trans &trans    &trans   &trans       &parPair        &kp UNDER   &trans  &trans &tdPRCNT 
+                &tdAT     &trans &trans    &trans   &trans       &sqrBracketPair &trans      &tdEXCL &trans &trans   
+                &trans    &trans &kp CARET &kp DLLR &trans       &curlyBracePair &kp HASH    &trans  &trans &trans   
+                                           &trans   &trans       &tdOpenPar      &tdClosePar
             >;
         };
 
