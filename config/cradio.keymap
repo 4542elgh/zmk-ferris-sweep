@@ -44,6 +44,7 @@
             bindings
                 = <&macro_press &kp LCTRL &kp LSHIFT>
                 , <&macro_tap &kp ESC>
+                , <&macro_release &kp LCTRL &kp LSHIFT>
                 ;
         };
         
