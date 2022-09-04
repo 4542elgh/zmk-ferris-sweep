@@ -347,7 +347,7 @@
         settings_layer {
             bindings = <
                 &bootloader &trans &trans     &trans &trans           &trans       &trans       &trans       &trans &trans
-                &trans      &trans &trans     &trans &trans           &trans       &trans       &exlorer     &trans &trans
+                &trans      &trans &trans     &trans &trans           &trans       &trans       &explorer     &trans &trans
                 &trans      &trans &bt BT_CLR &trans &clipHist        &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans &sk LGUI
                                               &trans &trans           &inputSwitch &trans
             >;
