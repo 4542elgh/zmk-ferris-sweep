@@ -80,7 +80,7 @@
         };
 
         // Left hand both thumb
-        combo_taskMgr {
+        combo_winVer {
             timeout-ms = <300>;
             key-positions = <30 31>;
             bindings = <&winVer>;
