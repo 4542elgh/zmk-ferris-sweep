@@ -35,6 +35,30 @@
                 , <&macro_release &kp LGUI &kp LSHIFT>
                 ;
         };
+
+        // Task Manager
+        taskMgr: taskMgr{
+            label = "taskManager";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHIFT>
+                , <&macro_tap &kp ESC>
+                ;
+        };
+        
+        // Run WinVer
+        winVer: winVer{
+            label = "winver";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp W &kp I &kp N &kp V &kp E &kp R>
+                ;
+        };
     };
 
     combos {
@@ -45,6 +69,20 @@
             timeout-ms = <300>;
             key-positions = <31 32>;
             bindings = <&screenshot>;
+        };
+        
+        // Right hand both thumb
+        combo_taskMgr {
+            timeout-ms = <300>;
+            key-positions = <32 33>;
+            bindings = <&taskMgr>;
+        };
+
+        // Left hand both thumb
+        combo_taskMgr {
+            timeout-ms = <300>;
+            key-positions = <30 31>;
+            bindings = <&winVer>;
         };
     };
 
