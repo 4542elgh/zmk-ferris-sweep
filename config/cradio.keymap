@@ -71,7 +71,7 @@
                 ;
         };
 
-        sqrBracketPair: parPair{
+        sqrBracketPair: sqrBracketPair{
             label = "winver";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -80,7 +80,7 @@
                 ;
         };
 
-        curlyBracePair: parPair{
+        curlyBracePair: curlyBracePair{
             label = "winver";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
