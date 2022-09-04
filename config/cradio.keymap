@@ -262,21 +262,21 @@
         //   / /|  / ___ | |/ /  / /___/ ___ |/ / /___/ _, _/ 
         //  /_/ |_/_/  |_|___/  /_____/_/  |_/_/_____/_/ |_|  
         //
-        // +-----+-----+-----+-----+-----+  +-----+------+-----+-----+-----+-----+
-        // |     |     |     |     |     |  |HOME | END  |     |     |     |     |
-        // +-----+-----+-----+-----+-----+  +-----+------+-----+-----+-----+-----+
-        // |     |     |     | ALT |     |  |LEFT | DOWN | UP  |RIGHT|     |     |
-        // +-----+-----+-----+-----+-----+  +-----+------+-----+-----+-----+-----+
-        // |     |     |     |     |     |  |     |      |     |     |     |     |
-        // +-----+-----+-----+-----+-----+  +-----+------+-----+-----+-----+-----+
-        //                   |     |     |  | TAB |m(TAB)|
-        //                   +-----+-----+  +-----+------+
+        // +-----+-----+-----+-----+-----+  +------+------+-----+-----+-----+-----+
+        // |     |     |     |     |     |  | HOME | END  |     |     |     |     |
+        // +-----+-----+-----+-----+-----+  +------+------+-----+-----+-----+-----+
+        // |     |     |     | ALT |     |  | LEFT | DOWN | UP  |RIGHT|     |     |
+        // +-----+-----+-----+-----+-----+  +------+------+-----+-----+-----+-----+
+        // |     |     |     |     |     |  |      |      |     |     |     |     |
+        // +-----+-----+-----+-----+-----+  +------+------+-----+-----+-----+-----+
+        //                   |     |     |  |m(TAB)| TAB  |
+        //                   +-----+-----+  +-----+-------+
         nav_layer{
             bindings = <
-                &trans &trans &trans &trans   &trans        &kp HOME &kp END  &trans &trans    &trans 
-                &trans &trans &trans &kp LALT &trans        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
-                &trans &trans &trans &trans   &trans        &trans   &trans   &trans &trans    &trans 
-                                     &trans   &trans        &kp TAB  &shiftTab
+                &trans &trans &trans &trans   &trans        &kp HOME  &kp END  &trans &trans    &trans 
+                &trans &trans &trans &kp LALT &trans        &kp LEFT  &kp DOWN &kp UP &kp RIGHT &trans 
+                &trans &trans &trans &trans   &trans        &trans    &trans   &trans &trans    &trans 
+                                     &trans   &trans        &shiftTab &kp TAB
             >;
         };
   
